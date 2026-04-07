@@ -32,6 +32,7 @@
             txtFullName = new TextBox();
             lblFullName = new Label();
             btnAdd = new Button();
+            btnWriteIntoFile = new Button();
             SuspendLayout();
             // 
             // listUsers
@@ -40,7 +41,7 @@
             listUsers.FormattingEnabled = true;
             listUsers.Location = new Point(47, 86);
             listUsers.Name = "listUsers";
-            listUsers.Size = new Size(544, 764);
+            listUsers.Size = new Size(544, 744);
             listUsers.TabIndex = 0;
             // 
             // txtFullName
@@ -69,11 +70,23 @@
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
             // 
+            // btnWriteIntoFile
+            // 
+            btnWriteIntoFile.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnWriteIntoFile.Location = new Point(460, 860);
+            btnWriteIntoFile.Name = "btnWriteIntoFile";
+            btnWriteIntoFile.Size = new Size(131, 45);
+            btnWriteIntoFile.TabIndex = 6;
+            btnWriteIntoFile.Text = "button1";
+            btnWriteIntoFile.UseVisualStyleBackColor = true;
+            btnWriteIntoFile.Click += btnWriteIntoFile_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1314, 988);
+            ClientSize = new Size(1329, 976);
+            Controls.Add(btnWriteIntoFile);
             Controls.Add(btnAdd);
             Controls.Add(lblFullName);
             Controls.Add(txtFullName);
@@ -90,5 +103,6 @@
         private TextBox txtFullName;
         private Label lblFullName;
         private Button btnAdd;
+        private Button btnWriteIntoFile;
     }
 }
