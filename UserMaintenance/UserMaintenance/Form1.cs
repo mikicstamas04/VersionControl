@@ -61,5 +61,16 @@ namespace UserMaintenance
                 MessageBox.Show($"Failed to save file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (listUsers.SelectedItem is not User selectedUser)
+            {
+                MessageBox.Show("Please select a user to delete.", "No selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            users.Remove(selectedUser);
+        }
     }
 }
