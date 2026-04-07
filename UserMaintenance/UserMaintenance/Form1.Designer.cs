@@ -33,6 +33,7 @@
             lblFullName = new Label();
             btnAdd = new Button();
             btnWriteIntoFile = new Button();
+            btnDelete = new Button();
             SuspendLayout();
             // 
             // listUsers
@@ -73,7 +74,7 @@
             // btnWriteIntoFile
             // 
             btnWriteIntoFile.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnWriteIntoFile.Location = new Point(460, 860);
+            btnWriteIntoFile.Location = new Point(460, 873);
             btnWriteIntoFile.Name = "btnWriteIntoFile";
             btnWriteIntoFile.Size = new Size(131, 45);
             btnWriteIntoFile.TabIndex = 6;
@@ -81,11 +82,23 @@
             btnWriteIntoFile.UseVisualStyleBackColor = true;
             btnWriteIntoFile.Click += btnWriteIntoFile_Click;
             // 
+            // btnDelete
+            // 
+            btnDelete.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnDelete.Location = new Point(246, 873);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(120, 45);
+            btnDelete.TabIndex = 7;
+            btnDelete.Text = "Törlés";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1329, 976);
+            ClientSize = new Size(1348, 989);
+            Controls.Add(btnDelete);
             Controls.Add(btnWriteIntoFile);
             Controls.Add(btnAdd);
             Controls.Add(lblFullName);
@@ -104,5 +117,6 @@
         private Label lblFullName;
         private Button btnAdd;
         private Button btnWriteIntoFile;
+        private Button btnDelete;
     }
 }
