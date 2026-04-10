@@ -1,4 +1,4 @@
-﻿namespace MnbCurrencyReader
+﻿namespace MnbCurrencyReader_02
 {
     partial class Form1
     {
@@ -34,10 +34,9 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1687, 1171);
+            ClientSize = new Size(1519, 1129);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_LoadAsync;
             ResumeLayout(false);
         }
 
